@@ -1,0 +1,6 @@
+﻿@model string
+
+@{
+    var trailerLink = Model;
+}
+@Html.ActionLink("Trailer", null, null, null, new { href = trailerLink, target = "_blank", @class = "link" })

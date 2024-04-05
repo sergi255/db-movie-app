@@ -1,0 +1,18 @@
+﻿@model int
+
+@{
+    var rating = Model;
+}
+@for (int i = 1; i <= 5; i++)
+{
+    <span title="@rating" style="color: black;">
+        @if (i <= rating)
+        {
+            @Html.Raw("&#x2605;")
+        }
+        else
+        {
+            @Html.Raw("&#x2606;")
+        }
+    </span>
+}
